@@ -76,12 +76,12 @@
             <img
               src="public/img/new-rafiart-logo-tranparan.png"
               alt=""
-              class="block w-5 h-5"
+              class="inline-block w-5 h-5"
             />
             <div class="px-2">rafiadadisini</div>
           </div>
 
-          <!-- mobile version -->
+          <!-- menubar -->
           <div class="">
             <div class="flex items-center pr-10 lg:hidden">
               <button
@@ -97,8 +97,8 @@
             </div>
 
             <div
-              class="hidden menu-mobile text-center absolute max-w-[200px] w-full bg-rafcolor rounded-lg shadow-lg top-[3.5rem] right-5 lg:block lg:static lg:shadow-none lg:max-w-full"
-              id="menu-mobile"
+              class="hidden menu-mobile text-center absolute max-w-[200px] w-full bg-rafcolor rounded-lg shadow-lg top-[3.5rem] right-5 lg:inline-block lg:static lg:shadow-none lg:max-w-full lg:top-0"
+              id="menu-bar"
             >
               <ul class="lg:flex">
                 <li class="menu-list">
@@ -135,7 +135,7 @@
             </div>
           </div>
 
-          <!-- end mobile version -->
+          <!-- end menubar-->
         </nav>
       </div>
     </section>
@@ -145,19 +145,18 @@
         <h2 class="judul-utama text-rafcolor">Who I am ?</h2>
         <p class="my-3">
           Seorang freelancer yang multi talenta dan telah lama berkelana di
-          dunia kreatif, sehingga memiliki kemampuan di berbagai bidang,
-          diantaranya desain, programing, menulis, editing, hingga fotografi.
+          dunia kreatif, sehingga memiliki kemampuan di berbagai bidang.
         </p>
         <p class="my-3">
           Ia juga sangat tertarik dengan dunia digital, khususnya AI, internet
           dan teknologi komunikasi yang saat ini terus berkembang. Dan, terus
-          Update dalam perkembangan tersebut.
+          <span class="italic">update</span> dalam perkembangan tersebut.
         </p>
 
         <p class="my-3">
-          Selain itu, sejak dari bangku kuliah, Ia juga sudah berkecimpung
-          bidang desain, jurnalistik, teater, menulis, cinematografi, dan
-          fotografi.
+          Selain itu, sejak dari bangku kuliah, Ia juga sudah aktif dan
+          berkecimpung di berbagai bidang, seperti desain, jurnalistik, teater,
+          menulis, cinematografi, dan fotografi.
         </p>
       </div>
     </section>
@@ -249,7 +248,7 @@
           <div
             class="p-3 grid grid-cols-5 content-evenly items-center justify-items-center text-center text-4xl"
           >
-            <div class="group">
+            <div class="group p-1">
               <span
                 class="invisible absolute group-hover:visible rounded shadow-lg p-2 bg-rafcolor bg-opacity-70 text-white -mt-10 text-sm"
                 >HTML</span
@@ -366,13 +365,43 @@
         </div>
       </div>
     </section>
+
     <section id="project">
+      <div class="bg-blue-50 mx-auto py-20">
+        <h1 class="judul-utama text-rafcolor">Project</h1>
+
+        <div class="w-3/4 mx-auto">
+          <div class="flex flex-wrap justify-evenly">
+            <div class="w-60 bg-white shadow-lg rounded-lg m-3">
+              <img
+                class="w-full aspect-video object-cover"
+                src="public/img/Brosur - Sudung/Leaflet-Sudung-mockup-2.jpg"
+                alt=""
+              />
+              <h2 class="text-center font-semibold text-xl text-rafcolor mt-3">
+                Judul Project
+              </h2>
+              <p
+                class="text-slate-700 font-light text-xs text-right px-5 pt-5 pb-2"
+              >
+                info project
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="bg-rafcolor mx-auto text-center py-20">Project</div>
+    </section>
+    <section id="resume">
       <div class="bg-blue-50 mx-auto text-center py-20">Project</div>
     </section>
-    <section id="contact"></section>
-    <section id="footer"></section>
 
     <div class="h-[1000px]"></div>
+
+    <footer class="bg-rafcolor">Footer</footer>
 
     <!-- script -->
     <script src="public/js/app.js"></script>

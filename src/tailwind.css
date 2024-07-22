@@ -33,7 +33,7 @@ body {
 }
 
 .menu-list {
-  @apply py-2 text-white hover:bg-orange-400 hover:font-bold hover:rounded-lg;
+  @apply h-full py-2 text-white hover:bg-orange-400 hover:font-bold hover:rounded-lg;
 }
 
 .icon-skill {
