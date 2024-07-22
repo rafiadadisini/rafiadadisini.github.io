@@ -5,18 +5,7 @@ body {
   font-family: roboto, sans-serif;
 }
 
-/*  */
 @tailwind components;
-
-.tooltip {
-  @apply invisible absolute;
-}
-
-.has-tooltip:hover .tooltip {
-  @apply visible z-50;
-}
-
-/*  */
 @tailwind utilities;
 
 .borcap {
@@ -48,5 +37,5 @@ body {
 }
 
 .icon-skill {
-  @apply mt-1 text-slate-800 hover:text-rafcolor;
+  @apply mt-1 text-slate-800;
 }
