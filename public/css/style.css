@@ -790,6 +790,10 @@ body {
   max-width: 200px;
 }
 
+.max-w-52 {
+  max-width: 13rem;
+}
+
 .origin-bottom-left {
   transform-origin: bottom left;
 }
