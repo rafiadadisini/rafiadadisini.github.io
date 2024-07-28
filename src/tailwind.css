@@ -37,5 +37,5 @@ body {
 }
 
 .icon-skill {
-  @apply mt-1 text-slate-800;
+  @apply mt-1 content-center text-slate-800;
 }
