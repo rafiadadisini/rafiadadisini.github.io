@@ -1334,8 +1334,8 @@ body {
   min-width: 8rem;
 }
 
-.max-w-52 {
-  max-width: 13rem;
+.max-w-56 {
+  max-width: 14rem;
 }
 
 .max-w-\[200px\] {
@@ -1752,10 +1752,6 @@ body {
 
 .text-right {
   text-align: right;
-}
-
-.align-baseline {
-  vertical-align: baseline;
 }
 
 .align-middle {
