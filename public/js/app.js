@@ -26,11 +26,11 @@ $(document).ready(function () {
               <img
                 class="object-cover w-full rounded-t-lg aspect-video"
                 src="${data.img_cover}"
-                alt=""
+                alt="${data.judul}"
               />
 
               <h2 class="mt-3 text-xl font-semibold text-center text-rafcolor">
-                ${data.judul}*
+                ${data.judul}
               </h2>
               <p
                 class="px-5 pt-5 pb-2 text-xs font-light text-right text-slate-700"
@@ -38,11 +38,7 @@ $(document).ready(function () {
                 ${data.kategori}
               </p>
             </div>
-
-            <!-- Akhir Card x -->
-
-            
-            `;
+            <!-- Akhir Card x -->`;
       }
 
       function modalcard() {
@@ -53,7 +49,7 @@ $(document).ready(function () {
               aria-hidden="true"
               class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
             >
-              <div class="relative w-10/12 max-h-full p-4">
+              <div class="relative w-full md:w-8/12 max-h-full p-4">
                 <div class="relative p-4 bg-white rounded-lg shadow-xl">
                   <div class="text-right">
                     <button
@@ -75,72 +71,74 @@ $(document).ready(function () {
                     <hr />
                   </div>
 
-                  <div class="flex flex-wrap justify-center p-3 mx-auto">
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-3 mx-auto">
                   
-                    <div class="w-full m-2 md:w-4/12">
+
+
+                    <div class="col-span-full">
                       <img
                         class="object-cover w-full rounded-sm"
                         src="${data.img_1}"
                       />
                     </div>
                   
-                    <div class="w-full m-2 md:w-4/12">
-                      <img
-                        class="object-cover w-full rounded-sm"
-                        src="${data.img_2}"
-                      />
-                    </div>
-                  
-                    <div class="w-full m-2 md:w-4/12">
+                    <div class="w-full">
                       <img
                         class="object-cover w-full rounded-sm"
                         src="${data.img_3}"
                       />
                     </div>
                   
-                    <div class="w-full m-2 md:w-4/12">
+                    <div class="w-full">
+                      <img
+                        class="object-cover w-full rounded-sm"
+                        src="${data.img_2}"
+                      />
+                    </div>
+                  
+                    <div class="w-full">
                       <img
                         class="object-cover w-full rounded-sm"
                         src="${data.img_4}"
                       />
                     </div>
                   
-                    <div class="w-full m-2 md:w-4/12">
+                    <div class="w-full">
                       <img
                         class="object-cover w-full rounded-sm"
                         src="${data.img_5}"
                       />
                     </div>
                   
-                    <div class="w-full m-2 md:w-4/12">
+                    <div class="w-full">
                       <img
                         class="object-cover w-full rounded-sm"
                         src="${data.img_6}"
                       />
                     </div>
                   
-                    <div class="w-full m-2 md:w-4/12">
+                    <div class="w-full">
                       <img
                         class="object-cover w-full rounded-sm"
                         src="${data.img_7}"
                       />
                     </div>
                   
-                    <div class="w-full m-2 md:w-4/12">
+                    <div class="w-full">
                       <img
                         class="object-cover w-full rounded-sm"
                         src="${data.img_8}"
                       />
                     </div>
                   
-                    <div class="w-full m-2 md:w-4/12">
+                    <div class="w-full">
                       <img
                         class="object-cover w-full rounded-sm"
                         src="${data.img_9}"
                       />
                     </div>
                   
-                    <div class="w-full m-2 md:w-4/12">
+                    <div class="w-full">
                       <img
                         class="object-cover w-full rounded-sm"
                         src="${data.img_10}"
