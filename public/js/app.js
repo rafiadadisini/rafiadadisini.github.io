@@ -1,23 +1,22 @@
-$(document).ready(function () {
-  //hamburger
-  const hamburger = document.querySelector("#hamburger");
-  const menuMobile = document.querySelector(".menu-mobile");
+//hamburger
+const hamburger = document.querySelector("#hamburger");
+const menuMobile = document.querySelector(".menu-mobile");
 
-  hamburger.addEventListener("click", function () {
-    hamburger.classList.toggle("hamburger-active");
-    menuMobile.classList.toggle("hidden");
-  });
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("hamburger-active");
+  menuMobile.classList.toggle("hidden");
+});
 
-  //panggil json project
-  $.getJSON("data/data.json", function (data) {
-    let project = data.data_project;
+//panggil json project
+$.getJSON("data/data.json", function (data) {
+  let project = data.data_project;
 
-    $.each(project, function (i, data) {
-      $("#project-card").append(card);
-      $("#project-card").append(modalcard);
+  $.each(project, function (i, data) {
+    $("#project-card").append(card);
+    $("#project-card").append(modalcard);
 
-      function card() {
-        return `<!-- Card x -->
+    function card() {
+      return `<!-- Card x -->
             <div
               data-modal-toggle="modal-card-${i}"
               data-modal-target="modal-card-${i}"
@@ -39,10 +38,10 @@ $(document).ready(function () {
               </p>
             </div>
             <!-- Akhir Card x -->`;
-      }
+    }
 
-      function modalcard() {
-        return `<!-- modal card x -->
+    function modalcard() {
+      return `<!-- modal card x -->
             <div
               id="modal-card-${i}"
               tabindex="-1"
@@ -150,7 +149,6 @@ $(document).ready(function () {
               </div>
             </div>
             <!-- akhir modal card x -->`;
-      }
-    });
+    }
   });
 });
