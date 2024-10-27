@@ -1143,20 +1143,12 @@ body {
   grid-column: 1 / -1;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .m-3 {
   margin: 0.75rem;
 }
 
 .m-auto {
   margin: auto;
-}
-
-.m-1 {
-  margin: 0.25rem;
 }
 
 .mx-2 {
@@ -1329,10 +1321,6 @@ body {
   width: 25%;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
 .w-3\/4 {
   width: 75%;
 }
@@ -1363,30 +1351,6 @@ body {
 
 .w-full {
   width: 100%;
-}
-
-.w-8\/12 {
-  width: 66.666667%;
-}
-
-.w-9\/12 {
-  width: 75%;
-}
-
-.w-7\/12 {
-  width: 58.333333%;
-}
-
-.w-3\/5 {
-  width: 60%;
-}
-
-.w-5\/6 {
-  width: 83.333333%;
-}
-
-.w-4\/6 {
-  width: 66.666667%;
 }
 
 .min-w-14 {
@@ -1529,10 +1493,6 @@ body {
 
 .gap-1 {
   gap: 0.25rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -2336,36 +2296,16 @@ body {
     width: 40%;
   }
 
-  .md\:w-4\/12 {
-    width: 33.333333%;
+  .md\:w-8\/12 {
+    width: 66.666667%;
   }
 
   .md\:w-9\/12 {
     width: 75%;
   }
 
-  .md\:w-3\/12 {
-    width: 25%;
-  }
-
-  .md\:w-8\/12 {
-    width: 66.666667%;
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:px-24 {
