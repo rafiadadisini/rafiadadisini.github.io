@@ -1,6 +1,22 @@
 {
   "data_project": [
     {
+      "judul": "Landing Page Design",
+      "kategori": "UI/UX Design",
+      "deskripsi": "UI/UX Design",
+      "img_cover": "/../public/img/Web Design/WebPlaybud.jpg",
+      "img_1": "/../public/img/Web Design/WebPlaybud.jpg",
+      "img_2": "",
+      "img_3": "",
+      "img_4": "",
+      "img_5": "",
+      "img_6": "",
+      "img_7": "",
+      "img_8": "",
+      "img_9": "",
+      "img_10": ""
+    },
+    {
       "judul": "Drowned in Malin Deman",
       "kategori": "Cover and Layout Design",
       "deskripsi": "Desain Sampul dan tata letak buku",

@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <!--  -->
@@ -21,6 +21,12 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css"
@@ -36,7 +42,7 @@
     <!--  -->
 
     <!-- lineicon -->
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
     <!--  -->
 
     <link
@@ -58,21 +64,21 @@
   <body>
     <!-- HOME -->
     <section id="home">
-      <div class="content-center w-full h-screen align-middle bg-rafcolor">
-        <div class="mx-auto text-center text-white md:w-1/2">
-          <div class="mx-auto group h-60 w-60 pt-14">
+      <div class="content-center bg-rafcolor w-full h-screen align-middle">
+        <div class="mx-auto md:w-1/2 text-white text-center">
+          <div class="group mx-auto pt-14 w-60 h-60">
             <img
               src="public/img/rafi.jpg"
               alt=""
-              class="mb-32 w-full rounded-full border-[0.5rem] border-solid border-white shadow-xl duration-500 group-hover:scale-150"
+              class="shadow-xl mb-32 border-[0.5rem] border-white border-solid rounded-full w-full group-hover:scale-150 duration-500"
             />
           </div>
-          <h1 class="mx-auto mt-24 text-4xl duration-500 hover:scale-110">
+          <h1 class="mx-auto mt-24 text-4xl hover:scale-110 duration-500">
             RAFII HIDAYATULLAH NAZARI
           </h1>
           <h6 class="m-auto font-thin tracking-wider">
-            Freelancer | Visual Designer | Frontend Dev | Copywriter | Gamer | a
-            Free Man
+            Freelancer | Visual Designer | UI/UX Designer | Frontend Develover |
+            Stock Photographer | Creative Writer | Gamer | a Free Man
           </h6>
           <h4 class="mt-4 tracking-[0.4rem]">@rafiadadisini</h4>
         </div>
@@ -80,14 +86,14 @@
     </section>
 
     <!-- NAVBAR -->
-    <section id="navbar" class="sticky top-0">
-      <div class="left-0 w-full text-white shadow-xl bg-rafcolor">
+    <section id="navbar" class="top-0 sticky">
+      <div class="left-0 bg-rafcolor shadow-xl w-full text-white">
         <nav
-          class="flex items-center justify-between px-10 py-2 mx-auto md:px-24"
+          class="flex justify-between items-center mx-auto px-10 md:px-24 py-2"
         >
-          <div class="flex w-1/4 border-solid">
+          <div class="flex border-solid w-1/4">
             <img
-              src="public/img/new-rafiart-logo-tranparan.png"
+              src="public/img/new-rafiart-logo-rounded.png"
               alt=""
               class="inline-block w-5 h-5"
             />
@@ -96,7 +102,7 @@
 
           <!-- menubar -->
           <div class="">
-            <div class="flex items-center pr-10 lg:hidden">
+            <div class="lg:hidden flex items-center pr-10">
               <button
                 id="hamburger"
                 name="hamburger"
@@ -110,37 +116,42 @@
             </div>
 
             <div
-              class="menu-mobile bg-rafcolor absolute right-5 top-[3.5rem] hidden w-full max-w-[200px] rounded-lg text-center shadow-lg lg:static lg:top-0 lg:inline-block lg:max-w-full lg:shadow-none"
+              class="hidden lg:inline-block top-[3.5rem] lg:top-0 right-5 lg:static absolute bg-rafcolor shadow-lg lg:shadow-none rounded-lg w-full max-w-[200px] lg:max-w-full text-center menu-mobile"
               id="menu-bar"
             >
               <ul class="lg:flex">
                 <li class="menu-list">
-                  <a class="py-2 mx-4" href="#home"
+                  <a class="mx-4 py-2" href="#home"
                     ><i class="fa fa-home"></i> Home</a
                   >
                 </li>
                 <li class="menu-list">
-                  <a class="py-2 mx-4" href="#about"
+                  <a class="mx-4 py-2" href="#about"
                     ><i class="fa fa-address-card"></i> About</a
                   >
                 </li>
                 <li class="menu-list">
-                  <a class="py-2 mx-4" href="#skill"
+                  <a class="mx-4 py-2" href="#skill"
                     ><i class="fa fa-ranking-star"></i> Skills</a
                   >
                 </li>
                 <li class="menu-list">
-                  <a class="py-2 mx-4" href="#project"
+                  <a class="mx-4 py-2" href="#project"
                     ><i class="fa fa-th-list"></i> Project</a
                   >
                 </li>
                 <li class="menu-list">
-                  <a class="py-2 mx-4" href="#contact">
+                  <a class="mx-4 py-2" href="#find-me"
+                    ><i class="fa-solid fa-users-viewfinder"></i> Find Me</a
+                  >
+                </li>
+                <li class="menu-list">
+                  <a class="mx-4 py-2" href="#contact">
                     <i class="far fa-address-book"></i> Contact</a
                   >
                 </li>
                 <li class="menu-list">
-                  <a class="py-2 mx-4" href="#resume"
+                  <a class="mx-4 py-2" href="#resume"
                     ><i class="far fa-id-badge"></i> Resume</a
                   >
                 </li>
@@ -154,22 +165,22 @@
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="w-full bg-blue-50">
+    <section id="about" class="bg-blue-50 w-full">
       <div
-        class="container px-5 pt-20 pb-5 mx-auto text-center sm:w-11/12 md:w-9/12 lg:w-6/12"
+        class="mx-auto px-5 pt-20 pb-5 sm:w-11/12 md:w-9/12 lg:w-6/12 text-center container"
       >
-        <h2 class="judul-utama text-rafcolor">Who I am ?</h2>
-        <p class="my-3">
+        <h2 class="text-rafcolor judul-utama">Who I am ?</h2>
+        <p class="my-3 text-slate-700">
           I am a multidisciplinary freelancer with hands-on experience in visual
           design, UI/UX, and front-end web development. My background also
           includes writing and photography, which enhance my ability to create
           engaging and functional digital content.
         </p>
-        <p>
+        <p class="my-3 text-slate-700">
           Currently, I am deepening my knowledge in artificial intelligence,
           staying updated with the latest trends and innovations in technology.
         </p>
-        <p class="my-3">
+        <p class="my-3 text-slate-700">
           By combining technical expertise with creative thinking, I aim to
           deliver efficient, aesthetic, and user-centered solutions. I am eager
           to keep learning, adapting, and contributing meaningfully to dynamic
@@ -179,78 +190,131 @@
     </section>
 
     <!-- SKILL -->
-    <section id="skill" class="w-full pb-1 bg-rafcolor pt-14">
-      <div class="w-3/4 pt-10 mx-auto">
+    <section id="skill" class="bg-rafcolor pt-14 pb-1 w-full">
+      <div class="mx-auto pt-10 w-3/4">
         <h2 class="text-white judul-utama">Skills</h2>
       </div>
       <div
-        class="grid content-center w-3/4 h-full grid-cols-1 gap-1 mx-auto mb-10 rounded-md shadow-xl bg-blue-50 md:grid-cols-3"
+        class="content-center gap-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-blue-50 shadow-xl mx-auto mb-10 rounded-md w-3/4"
       >
-        <div class="pb-10 mx-2 my-2 text-center bg-white rounded-md shadow-xl">
+        <!-- Skills Card -->
+        <div class="bg-white shadow-xl mx-2 my-2 pb-10 rounded-md text-center">
           <div
-            class="py-3 mx-auto border-b-2 border-solid text-rafcolor border-slate-200"
+            class="mx-auto py-3 border-slate-200 border-b-2 border-solid text-rafcolor"
           >
             <i class="p-5 text-6xl fa fas fa-pencil-ruler"></i>
-            <h2 class="text-xl">Visual Design</h2>
+            <h2 class="text-2xl">Visual Design</h2>
           </div>
 
-          <div class="w-full mx-auto mt-5">
-            <div
-              class="flex flex-wrap items-center justify-center text-[1.8rem]"
+          <!-- Details Skills Tag Visual Design-->
+          <div
+            class="flex flex-wrap justify-evenly px-5 py-2 border-slate-200 border-b-2 border-solid text-white text-center col cols-3"
+          >
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
             >
-              <div class="mx-5 min-w-14 group">
+              UI/UX Design
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Graphic Design
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Web Design
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Branding Design Concept
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Creative Design
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Desain Infografis
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Cover Design
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Layout Design
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Logo Design
+            </span>
+          </div>
+
+          <!-- details skills icons Visual Design-->
+          <div class="mx-auto mt-5 w-full">
+            <div
+              class="flex flex-wrap justify-center items-center text-[1.8rem]"
+            >
+              <div class="group mx-5 min-w-14">
                 <span
-                  class="absolute invisible -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
-                  >Adobe Illustrator</span
-                >
-                <i
-                  class="fi fi-brands-illustrator icon-skill group-hover:text-rafcolor"
-                ></i>
-              </div>
-              <div class="mx-5 min-w-14 group">
-                <span
-                  class="absolute invisible -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
-                  >Adobe Photoshop</span
-                >
-                <i
-                  class="fi fi-brands-photoshop icon-skill group-hover:text-rafcolor"
-                ></i>
-              </div>
-              <div class="mx-5 min-w-14 group">
-                <span
-                  class="absolute invisible -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
-                  >Adobe InDesign</span
-                >
-                <i
-                  class="fi fi-brands-indesign icon-skill group-hover:text-rafcolor"
-                ></i>
-              </div>
-              <div class="mx-5 min-w-14 group">
-                <span
-                  class="absolute invisible -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
-                  >Canva</span
-                >
-                <i
-                  class="fi fi-sr-circle-c icon-skill group-hover:text-rafcolor"
-                ></i>
-              </div>
-              <div class="mx-5 min-w-14 group">
-                <span
-                  class="absolute invisible -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
                   >Figma</span
                 >
                 <i
-                  class="self-center fi fi-brands-figma icon-skill group-hover:text-rafcolor"
+                  class="self-center group-hover:text-rafcolor fi fi-brands-figma icon-skill"
+                ></i>
+              </div>
+              <div class="group mx-5 min-w-14">
+                <span
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
+                  >Adobe Illustrator</span
+                >
+                <i
+                  class="group-hover:text-rafcolor fi fi-brands-illustrator icon-skill"
+                ></i>
+              </div>
+              <div class="group mx-5 min-w-14">
+                <span
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
+                  >Adobe Photoshop</span
+                >
+                <i
+                  class="group-hover:text-rafcolor fi fi-brands-photoshop icon-skill"
+                ></i>
+              </div>
+              <div class="group mx-5 min-w-14">
+                <span
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
+                  >Adobe InDesign</span
+                >
+                <i
+                  class="group-hover:text-rafcolor fi fi-brands-indesign icon-skill"
+                ></i>
+              </div>
+              <div class="group mx-5 min-w-14">
+                <span
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
+                  >Canva</span
+                >
+                <i
+                  class="group-hover:text-rafcolor lni lni-canva icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <span
-                  class="absolute invisible -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
                   >CorelDraw</span
                 >
                 <img
-                  class="h-12 icon-skill group-hover:text-rafcolor"
+                  class="h-12 group-hover:text-rafcolor icon-skill"
                   src="https://img.icons8.com/ios-filled/50/000000/coreldraw.png"
                   alt="coreldraw"
                 />
@@ -259,152 +323,273 @@
           </div>
         </div>
 
-        <div class="pb-5 mx-2 my-2 text-center bg-white rounded-md shadow-xl">
+        <!-- Skills Card -->
+        <div class="bg-white shadow-xl mx-2 my-2 pb-5 rounded-md text-center">
           <div
-            class="py-3 mx-auto border-b-2 border-solid text-rafcolor border-slate-200"
+            class="mx-auto py-3 border-slate-200 border-b-2 border-solid text-rafcolor"
           >
             <i class="p-5 text-6xl fa fa-file-code"></i>
-            <h2 class="text-xl">FrontEnd Dev</h2>
+            <h2 class="text-2xl">FrontEnd Dev</h2>
           </div>
 
-          <div class="w-full mx-auto mt-4">
-            <div
-              class="flex flex-wrap items-center justify-center text-[2.2rem]"
+          <!-- Details Skills Tag FrontEnd-->
+          <div
+            class="flex flex-wrap justify-evenly px-5 py-2 border-slate-200 border-b-2 border-solid text-white text-center col cols-3"
+          >
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
             >
-              <div class="mx-5 min-w-14 group">
+              UI/UX Design
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              FrontEnd Web Development
+            </span>
+          </div>
+
+          <!-- details skills icons FrontEnd-->
+          <div class="mx-auto mt-4 w-full">
+            <div
+              class="flex flex-wrap justify-center items-center text-[2.2rem]"
+            >
+              <div class="group mx-5 min-w-14">
                 <span
-                  class="absolute invisible p-2 -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
                   >HTML</span
                 >
                 <i
-                  class="fab fa-html5 icon-skill group-hover:text-rafcolor h-14"
+                  class="h-14 group-hover:text-rafcolor fab fa-html5 icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <span
-                  class="absolute invisible px-2 -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
                   >CSS</span
                 >
                 <i
-                  class="fab fa-css3-alt icon-skill group-hover:text-rafcolor h-14"
+                  class="h-14 group-hover:text-rafcolor fab fa-css3-alt icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <span
-                  class="absolute invisible px-2 -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
                   >Git</span
                 >
                 <i
-                  class="fab fa-git-alt icon-skill group-hover:text-rafcolor h-14"
+                  class="h-14 group-hover:text-rafcolor fab fa-git-alt icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <span
-                  class="absolute invisible px-2 -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
                   >Javascript</span
                 >
                 <i
-                  class="fab fa-js icon-skill group-hover:text-rafcolor h-14"
+                  class="h-14 group-hover:text-rafcolor fab fa-js icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <span
-                  class="absolute invisible px-2 -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
                   >PHP</span
                 >
                 <i
-                  class="fab fa-php icon-skill group-hover:text-rafcolor h-14"
+                  class="h-14 group-hover:text-rafcolor fab fa-php icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <span
-                  class="absolute invisible px-2 -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
                   >Tailwind</span
                 >
                 <i
-                  class="lni lni-tailwindcss icon-skill group-hover:text-rafcolor h-14"
+                  class="h-14 group-hover:text-rafcolor lni lni-tailwindcss icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <span
-                  class="absolute invisible px-2 -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
                   >Bootstrap</span
                 >
                 <i
-                  class="fab fa-bootstrap icon-skill group-hover:text-rafcolor h-14"
+                  class="h-14 group-hover:text-rafcolor fab fa-bootstrap icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <span
-                  class="absolute invisible px-2 -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
                   >Laravel</span
                 >
                 <i
-                  class="fab fa-laravel icon-skill group-hover:text-rafcolor h-14"
+                  class="h-14 group-hover:text-rafcolor fab fa-laravel icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <!-- <div class="group mx-5 min-w-14">
                 <span
-                  class="absolute invisible px-2 -mt-10 text-sm text-white rounded shadow-lg bg-rafcolor bg-opacity-70 group-hover:visible"
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
                   >Codeigniter</span
                 >
                 <img
-                  class="content-center icon-skill group-hover:text-rafcolor h-14"
+                  class="content-center h-14 group-hover:text-rafcolor icon-skill"
                   src="https://cloud.githubusercontent.com/assets/3203951/11592764/587f5dc6-9a55-11e5-8b4d-d64457e0c00a.png"
                   alt="Codeigniter"
                 />
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Card -->
+        <div class="bg-white shadow-xl mx-2 my-2 pb-5 rounded-md text-center">
+          <div
+            class="mx-auto py-3 border-slate-200 border-b-2 border-solid text-rafcolor"
+          >
+            <i class="p-5 text-6xl fa fa-camera"></i>
+            <h2 class="text-2xl">Photography</h2>
+          </div>
+
+          <!-- Details Skills Tag -->
+          <div
+            class="flex flex-wrap justify-evenly px-5 py-2 border-slate-200 border-b-2 border-solid text-white text-center col cols-3"
+          >
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Stock
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Food
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Product
+            </span>
+
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Documentary
+            </span>
+          </div>
+
+          <!-- details skills icons -->
+          <div class="mx-auto mt-4 w-full">
+            <div
+              class="flex flex-wrap justify-center items-center text-[2.2rem]"
+            >
+              <div class="group mx-5 min-w-14">
+                <span
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
+                  >Stock Photography</span
+                >
+                <i
+                  class="h-14 group-hover:text-rafcolor fi fi-sr-gallery icon-skill"
+                ></i>
+              </div>
+              <div class="group mx-5 min-w-14">
+                <span
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
+                  >Food Photography</span
+                >
+                <i
+                  class="h-14 group-hover:text-rafcolor fi fi-sr-room-service icon-skill"
+                ></i>
+              </div>
+              <div class="group mx-5 min-w-14">
+                <span
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
+                  >Product Photography</span
+                >
+                <i
+                  class="h-14 group-hover:text-rafcolor fi fi-sr-mode-landscape icon-skill"
+                ></i>
+              </div>
+              <div class="group mx-5 min-w-14">
+                <span
+                  class="invisible group-hover:visible absolute bg-rafcolor bg-opacity-70 shadow-lg -mt-10 px-2 py-1 rounded text-white text-sm"
+                  >Documentary Photography</span
+                >
+                <i
+                  class="h-14 group-hover:text-rafcolor fa fa-file-image-o icon-skill"
+                ></i>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="mx-2 my-2 text-center bg-white rounded-md shadow-xl">
+        <!-- Skills Card -->
+        <div class="bg-white shadow-xl mx-2 my-2 rounded-md text-center">
           <div
-            class="py-3 mx-auto border-b-2 border-solid text-rafcolor border-slate-200"
+            class="mx-auto py-3 border-slate-200 border-b-2 border-solid text-rafcolor"
           >
             <i class="p-5 text-6xl fa fa-keyboard"></i>
-            <h2 class="text-xl">Creative Writer</h2>
+            <h2 class="text-2xl">Creative Writing</h2>
           </div>
 
-          <div class="w-full mx-auto mt-4">
-            <div
-              class="flex flex-wrap items-center justify-center text-[2.2rem]"
+          <!-- Details Skills Tag -->
+          <div
+            class="flex flex-wrap justify-evenly px-5 py-2 border-slate-200 border-b-2 border-solid text-white text-center col cols-3"
+          >
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
             >
-              <div class="mx-5 min-w-14 group">
+              Article
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Copywriter
+            </span>
+            <span
+              class="justify-self-center content-center bg-rafcolor shadow-lg mx-2 my-1 px-3 py-1 rounded-full font-semibold text-xs"
+            >
+              Product Review
+            </span>
+          </div>
+
+          <div class="mx-auto mt-4 w-full">
+            <div
+              class="flex flex-wrap justify-center items-center text-[2.2rem]"
+            >
+              <div class="group mx-5 min-w-14">
                 <i
-                  class="fa fa-file-lines icon-skill group-hover:text-rafcolor"
+                  class="group-hover:text-rafcolor fa fa-file-lines icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <i
-                  class="fa fa-file-word icon-skill group-hover:text-rafcolor"
+                  class="group-hover:text-rafcolor fa fa-file-word icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <i
-                  class="fa fa-file-excel icon-skill group-hover:text-rafcolor"
+                  class="group-hover:text-rafcolor fa fa-file-excel icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <i
-                  class="fa fa-file-csv icon-skill group-hover:text-rafcolor"
+                  class="group-hover:text-rafcolor fa fa-file-csv icon-skill"
                 ></i>
               </div>
 
-              <div class="mx-5 min-w-14 group">
+              <div class="group mx-5 min-w-14">
                 <i
-                  class="fa fa-file-pdf icon-skill group-hover:text-rafcolor"
+                  class="group-hover:text-rafcolor fa fa-file-pdf icon-skill"
                 ></i>
               </div>
             </div>
@@ -415,10 +600,10 @@
 
     <!-- PROJECT -->
     <section id="project">
-      <div class="py-20 mx-auto bg-blue-50">
-        <h1 class="judul-utama text-rafcolor">Project</h1>
+      <div class="bg-blue-50 mx-auto py-20">
+        <h1 class="text-rafcolor judul-utama">Project</h1>
 
-        <div class="w-3/4 mx-auto">
+        <div class="mx-auto w-3/4">
           <div id="project-card" class="flex flex-wrap justify-evenly">
             <!-- Card -->
           </div>
@@ -426,23 +611,122 @@
       </div>
     </section>
 
+    <!-- FIND ME -->
+    <div class="mx-auto border border-t-[1px] border-rafcolor w-3/4"></div>
+    <section id="find-me">
+      <div class="mx-auto pt-20 w-1/2">
+        <h2 class="text-rafcolor judul-utama">Find me on other platforms</h2>
+      </div>
+
+      <div class="content-center mx-auto w-10/12 text-rafcolor">
+        <div class="flex flex-wrap justify-center mx-auto py-5">
+          <!-- Adobe Stock -->
+          <div
+            class="group bg-white shadow-lg m-5 rounded-lg w-40 text-center cursor-pointer"
+          >
+            <div
+              class="group-hover:bg-rafcolor m-auto p-5 rounded-lg h-40 text-white text-center"
+            >
+              <a
+                href="https://stock.adobe.com/uk/contributor/212656799/rafiadadisini"
+                target="_blank"
+              >
+                <div class="flex flex-col m-auto h-full">
+                  <img
+                    class="h-2/3 group-hover:scale-110"
+                    alt="Adobe Stock"
+                    src="https://static.cdnlogo.com/logos/a/74/adobe-stock.svg"
+                  />
+
+                  <h2
+                    class="m-auto p-2 h-1/3 font-medium text-rafcolor group-hover:text-white text-center group-hover:scale-125"
+                  >
+                    Adobe Stock
+                  </h2>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--  -->
+
+          <!-- Shutterstock -->
+          <div
+            class="group bg-white shadow-lg m-5 rounded-lg w-40 text-center cursor-pointer"
+          >
+            <div
+              class="group-hover:bg-rafcolor m-auto p-5 rounded-lg h-40 text-white text-center"
+            >
+              <a
+                href="https://www.shutterstock.com/id/g/RAFIart"
+                target="_blank"
+              >
+                <div class="flex flex-col h-full">
+                  <img
+                    class="h-2/3 group-hover:scale-125"
+                    alt="Shutterstock"
+                    src="https://static.cdnlogo.com/logos/s/59/shutterstock.svg"
+                  />
+
+                  <h2
+                    class="m-auto p-2 h-1/3 font-medium text-rafcolor group-hover:text-white text-center group-hover:scale-125"
+                  >
+                    Shutterstock
+                  </h2>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--  -->
+
+          <!-- DesignContest -->
+          <div
+            class="group bg-white shadow-lg m-5 rounded-lg w-40 text-center cursor-pointer"
+          >
+            <div
+              class="group-hover:bg-rafcolor m-auto p-5 rounded-lg h-40 text-white text-center"
+            >
+              <a
+                href="https://www.designcontest.com/designer/rafiadadisini/"
+                target="_blank"
+              >
+                <div class="flex flex-col mx-auto h-full text-center">
+                  <img
+                    class="h-2/3 group-hover:scale-110"
+                    alt="Design Contest"
+                    src="https://designcontest.nyc3.digitaloceanspaces.com/images/new-start/designcontest-logo-color-copy.svg"
+                  />
+
+                  <h2
+                    class="mx-auto mt-6 h-1/3 font-medium text-rafcolor group-hover:text-white text-center group-hover:scale-110"
+                  >
+                    DesignContest
+                  </h2>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact">
-      <div class="pb-10 mx-auto text-center bg-rafcolor">
-        <div class="w-1/2 pt-20 mx-auto">
+      <div class="bg-rafcolor mx-auto pb-10 text-center">
+        <div class="mx-auto pt-20 w-1/2">
           <h2 class="text-white judul-utama">Contact</h2>
         </div>
 
-        <div class="content-center w-1/2 mx-auto text-white">
-          <div class="flex flex-wrap py-5 justify-evenly">
+        <div class="content-center mx-auto w-1/2 text-white">
+          <div class="flex flex-wrap justify-evenly py-5">
             <!-- WA-->
-            <div class="m-3 rounded-lg shadow-lg cursor-pointer min-w-32 group">
+            <div class="group shadow-lg m-3 rounded-lg min-w-32 cursor-pointer">
               <div
-                class="w-full p-4 mx-auto rounded-lg group-hover:bg-orange-400"
+                class="group-hover:bg-orange-400 mx-auto p-4 rounded-lg w-full"
               >
                 <a href="https://wa.me/6285266104199" target="_blank">
                   <i
-                    class="fa fab fa-whatsapp text-7xl group-hover:scale-125"
+                    class="text-7xl group-hover:scale-125 fa fab fa-whatsapp"
                   ></i>
                   <h2 class="mt-3 text-base">Whastapp</h2>
                 </a>
@@ -451,12 +735,12 @@
             <!-- akhir WA -->
 
             <!-- sosmed block-->
-            <div class="m-3 rounded-lg shadow-lg cursor-pointer min-w-32 group">
+            <div class="group shadow-lg m-3 rounded-lg min-w-32 cursor-pointer">
               <div
-                class="w-full p-4 mx-auto text-center rounded-lg group-hover:bg-orange-400"
+                class="group-hover:bg-orange-400 mx-auto p-4 rounded-lg w-full text-center"
               >
                 <a href="mailto:lagirafi@gmail.com" target="_blank">
-                  <i class="fas fa-envelope text-7xl group-hover:scale-125"></i>
+                  <i class="text-7xl group-hover:scale-125 fas fa-envelope"></i>
                   <h2 class="mt-3 text-base">lagirafi@gmail.com</h2>
                 </a>
               </div>
@@ -464,16 +748,16 @@
             <!-- akhir sosmed block -->
 
             <!-- sosmed block-->
-            <div class="m-3 rounded-lg shadow-lg cursor-pointer min-w-32 group">
+            <div class="group shadow-lg m-3 rounded-lg min-w-32 cursor-pointer">
               <div
-                class="w-full p-4 mx-auto rounded-lg group-hover:bg-orange-400"
+                class="group-hover:bg-orange-400 mx-auto p-4 rounded-lg w-full"
               >
                 <a
                   href="https://www.linkedin.com/in/rafiadadisini/"
                   target="_blank"
                 >
                   <i
-                    class="fa fab fa-linkedin text-7xl group-hover:scale-125"
+                    class="text-7xl group-hover:scale-125 fa fab fa-linkedin"
                   ></i>
                   <h2 class="mt-3 text-base">LinkedIn</h2>
                 </a>
@@ -482,16 +766,16 @@
             <!-- akhir sosmed block -->
 
             <!-- sosmed block-->
-            <div class="m-3 rounded-lg shadow-lg cursor-pointer min-w-32 group">
+            <div class="group shadow-lg m-3 rounded-lg min-w-32 cursor-pointer">
               <div
-                class="w-full p-4 mx-auto rounded-lg group-hover:bg-orange-400"
+                class="group-hover:bg-orange-400 mx-auto p-4 rounded-lg w-full"
               >
                 <a
                   href="https://www.instagram.com/rafiadadisini/"
                   target="_blank"
                 >
                   <i
-                    class="fa fab fa-instagram text-7xl group-hover:scale-125"
+                    class="text-7xl group-hover:scale-125 fa fab fa-instagram"
                   ></i>
                   <h2 class="mt-3 text-base">Instagram</h2>
                 </a>
@@ -500,13 +784,13 @@
             <!-- akhir sosmed block -->
 
             <!-- sosmed block-->
-            <div class="m-3 rounded-lg shadow-lg cursor-pointer min-w-32 group">
+            <div class="group shadow-lg m-3 rounded-lg min-w-32 cursor-pointer">
               <div
-                class="w-full p-4 mx-auto rounded-lg group-hover:bg-orange-400"
+                class="group-hover:bg-orange-400 mx-auto p-4 rounded-lg w-full"
               >
                 <a href="https://www.tiktok.com/@rafiadadisini" target="_blank">
                   <i
-                    class="fa fab fa-tiktok text-7xl group-hover:scale-125"
+                    class="text-7xl group-hover:scale-125 fa fab fa-tiktok"
                   ></i>
                   <h2 class="mt-3 text-base">Tiktok</h2>
                 </a>
@@ -515,16 +799,16 @@
             <!-- akhir sosmed block -->
 
             <!-- sosmed block-->
-            <div class="m-3 rounded-lg shadow-lg cursor-pointer min-w-32 group">
+            <div class="group shadow-lg m-3 rounded-lg min-w-32 cursor-pointer">
               <div
-                class="w-full p-4 mx-auto rounded-lg group-hover:bg-orange-400"
+                class="group-hover:bg-orange-400 mx-auto p-4 rounded-lg w-full"
               >
                 <a
                   href="https://www.facebook.com/rafiadadisini"
                   target="_blank"
                 >
                   <i
-                    class="fab fa-facebook-square text-7xl group-hover:scale-125"
+                    class="text-7xl group-hover:scale-125 fab fa-facebook-square"
                   ></i>
                   <h2 class="mt-3 text-base">Facebook</h2>
                 </a>
@@ -538,33 +822,34 @@
 
     <!-- RESUME -->
     <section id="resume">
-      <div class="py-20 mx-auto bg-blue-50">
-        <h1 class="judul-utama text-rafcolor">Resume</h1>
+      <div class="bg-blue-50 mx-auto py-20">
+        <h1 class="text-rafcolor judul-utama">Resume</h1>
 
         <div
-          class="w-4/5 p-5 mx-auto text-center text-white rounded-lg shadow-lg bg-rafcolor group md:w-2/5"
+          class="group bg-rafcolor shadow-lg mx-auto p-5 rounded-lg w-4/5 md:w-2/5 text-white text-center"
         >
-          <div class="p-5 mx-auto duration-500 group-hover:scale-125">
+          <div class="mx-auto p-5 group-hover:scale-125 duration-500">
             <a
               href="https://drive.google.com/file/d/1jsWXjlScKxz8qHlTOFPSHMFddTqg6lK3/view?usp=sharing"
               class=""
               target="_blank"
             >
-              <i class="fa far fa-id-badge text-9xl"></i>
-              <h2 class="mt-5 text-xl font-light">Download Resume</h2>
+              <i class="text-9xl fa far fa-id-badge"></i>
+              <h2 class="mt-5 font-light text-xl">Download Resume</h2>
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="h-20 pt-10 mx-auto text-center text-white bg-rafcolor">
+    <!-- FOOTER -->
+    <footer class="bg-rafcolor mx-auto pt-10 h-20 text-white text-center">
       <div class="content-center text-base">
         <a href="#">
           <i class="far fa-copyright"></i>
           <img
             src="public/img/new-rafiart-logo-ico.ico"
-            class="inline-block h-5 pl-3"
+            class="inline-block pl-3 h-5"
           />
           <span>rafiadadisini</span>
         </a>

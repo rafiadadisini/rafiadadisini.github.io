@@ -32,7 +32,7 @@ $.getJSON("data/data.json", function (data) {
                 ${data.judul}
               </h2>
               <p
-                class="px-5 pt-5 pb-2 text-xs font-light text-right text-slate-700"
+                class="bg-rafcolor  text-xs text-medium text-center text-white rounded-full p-1 mx-12 mb-5 mt-2"
               >
                 ${data.kategori}
               </p>
