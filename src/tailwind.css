@@ -2,7 +2,7 @@
 @tailwind base;
 
 body {
-  font-family: roboto, sans-serif;
+  font-family: poppins, sans-serif;
 }
 
 @tailwind components;
