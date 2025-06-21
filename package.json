@@ -2,7 +2,7 @@
   "dependencies": {
     "tailwindcss": "^3.4.4"
   },
-  "name": "tailweb",
+  "name": "rafiadadisini",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rafii Hidayatullah Nazari",
   "license": "ISC",
-  "description": "",
+  "description": "Portfolio Rafii Hidayatullah Nazari",
   "devDependencies": {
     "flowbite": "^2.5.2"
   }
