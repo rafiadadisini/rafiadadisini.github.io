@@ -28,7 +28,7 @@ $.getJSON("data/data.json", function (data) {
                 alt="${data.judul}"
               />
 
-              <h2 class="mt-3 text-xl font-semibold text-center text-rafcolor">
+              <h2 class="mt-3 text-xl font-semibold text-center text-rafcolor mx-5">
                 ${data.judul}
               </h2>
               <p
