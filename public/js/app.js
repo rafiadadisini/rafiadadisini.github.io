@@ -20,10 +20,10 @@ $.getJSON("data/data.json", function (data) {
             <div
               data-modal-toggle="modal-card-${i}"
               data-modal-target="modal-card-${i}"
-              class="m-3 bg-white rounded-lg shadow-lg cursor-pointer max-w-56 lg:max-w-80"
+              class="m-3 bg-white rounded-lg shadow-lg cursor-pointer max-w-56 lg:max-w-80 group"
             >
               <img
-                class="object-cover w-full rounded-t-lg aspect-video"
+                class="object-cover w-full rounded-t-lg aspect-video group-hover:scale-110 group-hover:shadow-xl"
                 src="${data.img_cover}"
                 alt="${data.judul}"
               />
