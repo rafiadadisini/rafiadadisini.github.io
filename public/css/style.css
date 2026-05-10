@@ -1155,6 +1155,14 @@ body {
   margin: auto;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -1204,10 +1212,6 @@ body {
 
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 
 .mb-32 {
@@ -1757,6 +1761,14 @@ body {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-1 {
