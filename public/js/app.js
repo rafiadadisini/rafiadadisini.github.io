@@ -3,20 +3,22 @@ const hamburger = document.querySelector("#hamburger");
 const menuMobile = document.querySelector(".menu-mobile");
 
 hamburger.addEventListener("click", function () {
-  hamburger.classList.toggle("hamburger-active");
-  menuMobile.classList.toggle("hidden");
+	hamburger.classList.toggle("hamburger-active");
+	menuMobile.classList.toggle("hidden");
 });
 
 //panggil json project
 $.getJSON("data/data.json", function (data) {
-  let project = data.data_project;
+	let project = data.data_project;
 
-  $.each(project, function (i, data) {
-    $("#project-card").append(card);
-    $("#project-card").append(modalcard);
+	$.each(project, function (i, data) {
+		// Memasukkan hasil pemanggilan fungsi card dan modalcard ke DOM
+		$("#project-card").append(card());
+		$("#project-card").append(modalcard());
 
-    function card() {
-      return `<!-- Card x -->
+		// Fungsi untuk menghasilkan elemen card project
+		function card() {
+			return `<!-- Card x -->
             <div
               data-modal-toggle="modal-card-${i}"
               data-modal-target="modal-card-${i}"
@@ -38,10 +40,35 @@ $.getJSON("data/data.json", function (data) {
               </p>
             </div>
             <!-- Akhir Card x -->`;
-    }
+		}
 
-    function modalcard() {
-      return `<!-- modal card x -->
+		// Fungsi untuk menghasilkan elemen modal detail proyek secara dinamis
+		function modalcard() {
+			// Menyusun elemen gambar tambahan secara dinamis guna menghindari broken image
+			let extraImagesHTML = "";
+
+			// Render Gambar Utama (img_1) sebagai elemen lebar penuh jika tersedia
+			if (data.img_1 && data.img_1.trim() !== "") {
+				extraImagesHTML += `
+          <div class="col-span-full">
+            <img class="object-cover w-full rounded-sm" src="${data.img_1}" />
+          </div>
+        `;
+			}
+
+			// Render Gambar Pendukung (img_2 sampai img_10) secara dinamis menggunakan perulangan jika datanya tersedia
+			for (let num = 2; num <= 10; num++) {
+				let imageKey = `img_${num}`;
+				if (data[imageKey] && data[imageKey].trim() !== "") {
+					extraImagesHTML += `
+            <div class="w-full">
+              <img class="object-cover w-full rounded-sm" src="${data[imageKey]}" />
+            </div>
+          `;
+				}
+			}
+
+			return `<!-- modal card x -->
             <div
               id="modal-card-${i}"
               tabindex="-1"
@@ -70,85 +97,19 @@ $.getJSON("data/data.json", function (data) {
                     <hr />
                   </div>
 
+                  <!-- Grid Gambar yang Hanya Dirender Jika Eksis -->
                   <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-3 mx-auto">
-                  
-
-
-                    <div class="col-span-full">
-                      <img
-                        class="object-cover w-full rounded-sm"
-                        src="${data.img_1}"
-                      />
-                    </div>
-                  
-                    <div class="w-full">
-                      <img
-                        class="object-cover w-full rounded-sm"
-                        src="${data.img_3}"
-                      />
-                    </div>
-                  
-                    <div class="w-full">
-                      <img
-                        class="object-cover w-full rounded-sm"
-                        src="${data.img_2}"
-                      />
-                    </div>
-                  
-                    <div class="w-full">
-                      <img
-                        class="object-cover w-full rounded-sm"
-                        src="${data.img_4}"
-                      />
-                    </div>
-                  
-                    <div class="w-full">
-                      <img
-                        class="object-cover w-full rounded-sm"
-                        src="${data.img_5}"
-                      />
-                    </div>
-                  
-                    <div class="w-full">
-                      <img
-                        class="object-cover w-full rounded-sm"
-                        src="${data.img_6}"
-                      />
-                    </div>
-                  
-                    <div class="w-full">
-                      <img
-                        class="object-cover w-full rounded-sm"
-                        src="${data.img_7}"
-                      />
-                    </div>
-                  
-                    <div class="w-full">
-                      <img
-                        class="object-cover w-full rounded-sm"
-                        src="${data.img_8}"
-                      />
-                    </div>
-                  
-                    <div class="w-full">
-                      <img
-                        class="object-cover w-full rounded-sm"
-                        src="${data.img_9}"
-                      />
-                    </div>
-                  
-                    <div class="w-full">
-                      <img
-                        class="object-cover w-full rounded-sm"
-                        src="${data.img_10}"
-                      />
-                    </div>
-                    
+                    ${extraImagesHTML}
                   </div>
                 </div>
               </div>
             </div>
             <!-- akhir modal card x -->`;
-    }
-  });
+		}
+	});
+
+	// Re-inisialisasi interaktivitas Flowbite modal setelah seluruh elemen selesai ditambahkan ke DOM
+	if (typeof initFlowbite === "function") {
+		initFlowbite();
+	}
 });
