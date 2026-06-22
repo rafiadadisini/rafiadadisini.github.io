@@ -1,3 +1,9 @@
+// Fungsi pembantu untuk mengamankan karakter tanda kutip ganda agar tidak merusak atribut DOM
+function escapeHtml(str) {
+	if (!str) return "";
+	return str.replace(/"/g, "&quot;");
+}
+
 //hamburger
 const hamburger = document.querySelector("#hamburger");
 const menuMobile = document.querySelector(".menu-mobile");
@@ -27,7 +33,7 @@ $.getJSON("data/data.json", function (data) {
               <img
                 class="object-cover w-full rounded-t-lg aspect-video group-hover:scale-110 group-hover:shadow-xl"
                 src="${data.img_cover}"
-                alt="${data.judul}"
+                alt="${escapeHtml(data.judul)}"
               />
 
               <h2 class="mt-3 text-xl font-semibold text-center text-rafcolor mx-5">
@@ -47,8 +53,8 @@ $.getJSON("data/data.json", function (data) {
 			// Menyusun elemen gambar tambahan secara dinamis guna menghindari broken image
 			let extraImagesHTML = "";
 
-			// Render Gambar Utama (img_1) sebagai elemen lebar penuh jika tersedia
-			if (data.img_1 && data.img_1.trim() !== "") {
+			// Memastikan img_1 berupa string dan tidak kosong sebelum dirender
+			if (data.img_1 && typeof data.img_1 === "string" && data.img_1.trim() !== "") {
 				extraImagesHTML += `
           <div class="col-span-full">
             <img class="object-cover w-full rounded-sm" src="${data.img_1}" />
@@ -56,10 +62,10 @@ $.getJSON("data/data.json", function (data) {
         `;
 			}
 
-			// Render Gambar Pendukung (img_2 sampai img_10) secara dinamis menggunakan perulangan jika datanya tersedia
+			// Melakukan perulangan gambar pendukung secara aman dengan mengecek tipe datanya
 			for (let num = 2; num <= 10; num++) {
 				let imageKey = `img_${num}`;
-				if (data[imageKey] && data[imageKey].trim() !== "") {
+				if (data[imageKey] && typeof data[imageKey] === "string" && data[imageKey].trim() !== "") {
 					extraImagesHTML += `
             <div class="w-full">
               <img class="object-cover w-full rounded-sm" src="${data[imageKey]}" />

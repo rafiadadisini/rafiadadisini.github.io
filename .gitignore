@@ -21,3 +21,6 @@ pnpm-debug.log*
 
 # Mengabaikan folder preferensi editor lokal VS Code agar tidak menimpa setelan developer lain
 .vscode/
+
+# Mengabaikan halaman CMS statis agar hanya berjalan secara lokal
+admin.html
