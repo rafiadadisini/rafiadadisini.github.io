@@ -13,95 +13,6 @@
     </script>
     <!-- css -->
     <link rel="stylesheet" href="public/css/style.css" />
-    
-    <style>
-      /* Transisi warna yang halus untuk elemen saat beralih tema */
-      body, section, div, h1, h2, h3, h4, h5, h6, p, i, a, span, button {
-        transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-      }
-      
-      /* Aturan CSS untuk Mode Gelap (ketika html memiliki kelas .dark) */
-      html.dark body {
-        background-color: #0b0f19;
-        color: #f1f5f9;
-      }
-      html.dark .bg-blue-50 {
-        background-color: #0b0f19 !important;
-      }
-      html.dark #skill, html.dark #contact {
-        background-color: #0f172a !important;
-      }
-      html.dark footer {
-        background-color: #070a13 !important;
-      }
-      html.dark #navbar > div {
-        background-color: #0f172a !important;
-        border-bottom: 1px solid #1e293b;
-      }
-      html.dark #menu-bar {
-        background-color: #0f172a !important;
-      }
-      html.dark .text-slate-700 {
-        color: #cbd5e1 !important;
-      }
-      html.dark .text-rafcolor {
-        color: #38bdf8 !important;
-      }
-      html.dark .judul-utama {
-        color: #38bdf8 !important;
-      }
-      html.dark .border-slate-200 {
-        border-color: #334155 !important;
-      }
-      html.dark #about .bg-white,
-      html.dark #skill .bg-white,
-      html.dark #project-card .bg-white,
-      html.dark #find-me .bg-white,
-      html.dark [id^="modal-card-"] .bg-white,
-      html.dark [id^="modal-card-"] {
-        background-color: #1e293b !important;
-        color: #f8fafc !important;
-        border-color: #334155 !important;
-      }
-      html.dark .group:hover .group-hover\:text-rafcolor {
-        color: #38bdf8 !important;
-      }
-      
-      /* Gaya kustom untuk tombol toggle tema tunggal (ikon tunggal) */
-      #btn-theme-toggle > .moon-icon {
-        display: none; /* Sembunyikan ikon bulan secara default */
-      }
-      #btn-theme-toggle > .sun-icon {
-        display: inline-block; /* Tampilkan ikon matahari secara default */
-      }
-      
-      /* Gaya kustom ketika class .dark aktif di html (Mode Gelap) */
-      html.dark #btn-theme-toggle {
-        background-color: rgba(2, 6, 23, 0.4) !important;
-        border-color: #1e293b !important;
-      }
-      html.dark #btn-theme-toggle > .sun-icon {
-        display: none; /* Sembunyikan matahari pada mode gelap */
-      }
-      html.dark #btn-theme-toggle > .moon-icon {
-        display: inline-block; /* Tampilkan bulan pada mode gelap */
-        color: #e2e8f0 !important; /* Warna abu-abu terang untuk bulan */
-      }
-      
-      /* Gaya ikon skill pada mode gelap agar terlihat kontras di atas background gelap */
-      html.dark .icon-skill {
-        color: #cbd5e1; /* Mengubah warna ikon menjadi abu-abu terang */
-      }
-      /* Hover agar ikon berubah menjadi biru langit khas rafi-color di mode gelap */
-      html.dark .group:hover .icon-skill {
-        color: #38bdf8;
-      }
-      /* Membalikkan warna gambar ikon (seperti CorelDraw) agar menjadi putih di mode gelap */
-      html.dark img.icon-skill {
-        filter: invert(1);
-      }
-    </style>
-    <!--  -->
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -268,34 +179,37 @@
               </ul>
             </div>
 
-            <!-- Tombol Pengalih Bahasa (ID/EN) -->
-            <button
-              id="btn-lang-toggle"
-              class="w-8 h-8 flex items-center justify-center bg-white/20 rounded-lg border border-white/20 transition-all duration-300 focus:outline-none cursor-pointer flex-shrink-0 text-[10px] font-extrabold text-white mr-2"
-              title="Ubah Bahasa / Switch Language"
-            >
-              <!-- Teks ID (Tampil saat Bahasa Indonesia aktif) -->
-              <span class="lang-id-text">ID</span>
-              <!-- Teks EN (Tampil saat Bahasa Inggris aktif) -->
-              <span class="lang-en-text" style="display: none;">EN</span>
-            </button>
+            <!-- Kelompok Tombol Aksi (Tema & Bahasa) menggunakan tata letak flexbox dan jarak horizontal antar elemen -->
+            <div class="flex items-center space-x-3 ml-4">
+              <!-- Tombol Pengalih Bahasa (ID/EN) dengan kelas visual Tailwind CSS -->
+              <button
+                id="btn-lang-toggle"
+                class="w-8 h-8 flex items-center justify-center bg-white/20 rounded-lg border border-white/20 transition-all duration-300 focus:outline-none cursor-pointer flex-shrink-0 text-[10px] font-extrabold text-white"
+                title="Ubah Bahasa / Switch Language"
+              >
+                <!-- Teks ID (Tampil saat Bahasa Indonesia aktif) -->
+                <span class="lang-id-text">ID</span>
+                <!-- Teks EN (Tampil saat Bahasa Inggris aktif) -->
+                <span class="lang-en-text" style="display: none;">EN</span>
+              </button>
 
-            <!-- Tombol Pengalih Tema (Ikon tunggal Matahari/Bulan) di ujung kanan -->
-            <button
-              id="btn-theme-toggle"
-              class="w-8 h-8 flex items-center justify-center bg-white/20 rounded-lg border border-white/20 transition-all duration-300 focus:outline-none cursor-pointer flex-shrink-0 text-sm"
-              title="Toggle Tema Gelap/Terang"
-            >
-              <!-- Ikon Matahari (Tampil saat Mode Terang) -->
-              <span class="sun-icon text-amber-400">
-                <i class="fas fa-sun"></i>
-              </span>
-              
-              <!-- Ikon Bulan (Tampil saat Mode Gelap) -->
-              <span class="moon-icon">
-                <i class="fas fa-moon"></i>
-              </span>
-            </button>
+              <!-- Tombol Pengalih Tema (Ikon tunggal Matahari/Bulan) -->
+              <button
+                id="btn-theme-toggle"
+                class="w-8 h-8 flex items-center justify-center bg-white/20 rounded-lg border border-white/20 transition-all duration-300 focus:outline-none cursor-pointer flex-shrink-0 text-sm"
+                title="Toggle Tema Gelap/Terang"
+              >
+                <!-- Ikon Matahari (Tampil saat Mode Terang) -->
+                <span class="sun-icon text-amber-400">
+                  <i class="fas fa-sun"></i>
+                </span>
+                
+                <!-- Ikon Bulan (Tampil saat Mode Gelap) -->
+                <span class="moon-icon">
+                  <i class="fas fa-moon"></i>
+                </span>
+              </button>
+            </div>
           </div>
 
           <!-- end menubar-->

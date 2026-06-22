@@ -39,3 +39,88 @@ body {
 .icon-skill {
   @apply py-1 mx-auto text-slate-800 content-center my-1;
 }
+
+/* Transisi warna global yang halus untuk transisi tema gelap/terang */
+body, section, div, h1, h2, h3, h4, h5, h6, p, i, a, span, button {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Penyesuaian skema warna elemen-elemen dokumen pada saat Mode Gelap aktif */
+.dark body {
+  background-color: #0b0f19;
+  color: #f1f5f9;
+}
+.dark .bg-blue-50 {
+  background-color: #0b0f19 !important;
+}
+.dark #skill, .dark #contact {
+  background-color: #0f172a !important;
+}
+.dark footer {
+  background-color: #070a13 !important;
+}
+.dark #navbar > div {
+  background-color: #0f172a !important;
+  border-bottom: 1px solid #1e293b;
+}
+.dark #menu-bar {
+  background-color: #0f172a !important;
+}
+.dark .text-slate-700 {
+  color: #cbd5e1 !important;
+}
+.dark .text-rafcolor {
+  color: #38bdf8 !important;
+}
+.dark .judul-utama {
+  color: #38bdf8 !important;
+}
+.dark .border-slate-200 {
+  border-color: #334155 !important;
+}
+.dark #about .bg-white,
+.dark #skill .bg-white,
+.dark #project-card .bg-white,
+.dark #find-me .bg-white,
+.dark [id^="modal-card-"] .bg-white,
+.dark [id^="modal-card-"] {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}
+.dark .group:hover .group-hover\:text-rafcolor {
+  color: #38bdf8 !important;
+}
+
+/* Gaya default tombol pengalih tema dengan format ikon tunggal */
+#btn-theme-toggle > .moon-icon {
+  display: none;
+}
+#btn-theme-toggle > .sun-icon {
+  display: inline-block;
+}
+
+/* Penyesuaian visual tombol pengalih tema pada saat Mode Gelap aktif */
+.dark #btn-theme-toggle {
+  background-color: rgba(2, 6, 23, 0.4) !important;
+  border-color: #1e293b !important;
+}
+.dark #btn-theme-toggle > .sun-icon {
+  display: none;
+}
+.dark #btn-theme-toggle > .moon-icon {
+  display: inline-block;
+  color: #e2e8f0 !important;
+}
+
+/* Penyesuaian kontras ikon skill pada saat Mode Gelap aktif */
+.dark .icon-skill {
+  color: #cbd5e1;
+}
+.dark .group:hover .icon-skill {
+  color: #38bdf8;
+}
+.dark img.icon-skill {
+  filter: invert(1);
+}
+
