@@ -1,14 +1,11 @@
-// Fungsi pembantu untuk mengamankan karakter tanda kutip ganda agar tidak merusak atribut DOM
-function escapeHtml(str) {
-	if (!str) return "";
-	return str.replace(/"/g, "&quot;");
-}
+// Mengamankan karakter tanda kutip ganda pada teks agar tidak merusak validitas atribut DOM
+const escapeHtml = (str) => str ? str.replace(/"/g, "&quot;") : "";
 
-//hamburger
+// Mengatur interaktivitas tombol hamburger menu navigasi responsif
 const hamburger = document.querySelector("#hamburger");
 const menuMobile = document.querySelector(".menu-mobile");
 
-hamburger.addEventListener("click", function () {
+hamburger.addEventListener("click", () => {
 	hamburger.classList.toggle("hamburger-active");
 	menuMobile.classList.toggle("hidden");
 });
@@ -41,6 +38,8 @@ $.getJSON("data/data.json", function (data) {
               </h2>
               <p
                 class="bg-rafcolor  text-xs text-medium text-center text-white rounded-full p-1 mx-12 mb-5 mt-2"
+                data-lang-id="${escapeHtml(data.kategori_id || data.kategori)}"
+                data-lang-en="${escapeHtml(data.kategori)}"
               >
                 ${data.kategori}
               </p>
@@ -99,7 +98,12 @@ $.getJSON("data/data.json", function (data) {
                     >
                       ${data.judul}
                     </h2>
-                    <p>${data.deskripsi}</p>
+                    <p
+                      data-lang-id="${escapeHtml(data.deskripsi)}"
+                      data-lang-en="${escapeHtml(data.deskripsi_en || data.deskripsi)}"
+                    >
+                      ${data.deskripsi}
+                    </p>
                     <hr />
                   </div>
 
@@ -114,8 +118,13 @@ $.getJSON("data/data.json", function (data) {
 		}
 	});
 
-	// Re-inisialisasi interaktivitas Flowbite modal setelah seluruh elemen selesai ditambahkan ke DOM
+	// Melakukan inisialisasi ulang pustaka Flowbite Modal setelah seluruh elemen dinamis tersemat di DOM
 	if (typeof initFlowbite === "function") {
 		initFlowbite();
+	}
+
+	// Menyinkronkan konten proyek dinamis yang baru saja selesai dimuat ke bahasa aktif saat ini
+	if (typeof applyLanguage === "function") {
+		applyLanguage(window.currentLang || "en");
 	}
 });

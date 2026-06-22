@@ -218,41 +218,67 @@
               <ul class="lg:flex">
                 <li class="menu-list">
                   <a class="mx-4 py-2" href="#home"
+                    data-lang-id='<i class="fa fa-home"></i> Beranda'
+                    data-lang-en='<i class="fa fa-home"></i> Home'
                     ><i class="fa fa-home"></i> Home</a
                   >
                 </li>
                 <li class="menu-list">
                   <a class="mx-4 py-2" href="#about"
+                    data-lang-id='<i class="fa fa-address-card"></i> Tentang'
+                    data-lang-en='<i class="fa fa-address-card"></i> About'
                     ><i class="fa fa-address-card"></i> About</a
                   >
                 </li>
                 <li class="menu-list">
                   <a class="mx-4 py-2" href="#skill"
+                    data-lang-id='<i class="fa fa-ranking-star"></i> Keahlian'
+                    data-lang-en='<i class="fa fa-ranking-star"></i> Skills'
                     ><i class="fa fa-ranking-star"></i> Skills</a
                   >
                 </li>
                 <li class="menu-list">
                   <a class="mx-4 py-2" href="#project"
+                    data-lang-id='<i class="fa fa-th-list"></i> Proyek'
+                    data-lang-en='<i class="fa fa-th-list"></i> Project'
                     ><i class="fa fa-th-list"></i> Project</a
                   >
                 </li>
                 <li class="menu-list">
                   <a class="mx-4 py-2" href="#find-me"
+                    data-lang-id='<i class="fa fa-users-viewfinder"></i> Temukan Saya'
+                    data-lang-en='<i class="fa fa-users-viewfinder"></i> Find Me'
                     ><i class="fa fa-users-viewfinder"></i> Find Me</a
                   >
                 </li>
                 <li class="menu-list">
-                  <a class="mx-4 py-2" href="#contact">
-                    <i class="far fa-address-book"></i> Contact</a
+                  <a class="mx-4 py-2" href="#contact"
+                    data-lang-id='<i class="fa fa-address-book"></i> Kontak'
+                    data-lang-en='<i class="fa fa-address-book"></i> Contact'
+                    ><i class="fa fa-address-book"></i> Contact</a
                   >
                 </li>
                 <li class="menu-list">
                   <a class="mx-4 py-2" href="#resume"
-                    ><i class="far fa-id-badge"></i> Resume</a
+                    data-lang-id='<i class="fa fa-id-badge"></i> Resume'
+                    data-lang-en='<i class="fa fa-id-badge"></i> Resume'
+                    ><i class="fa fa-id-badge"></i> Resume</a
                   >
                 </li>
               </ul>
             </div>
+
+            <!-- Tombol Pengalih Bahasa (ID/EN) -->
+            <button
+              id="btn-lang-toggle"
+              class="w-8 h-8 flex items-center justify-center bg-white/20 rounded-lg border border-white/20 transition-all duration-300 focus:outline-none cursor-pointer flex-shrink-0 text-[10px] font-extrabold text-white mr-2"
+              title="Ubah Bahasa / Switch Language"
+            >
+              <!-- Teks ID (Tampil saat Bahasa Indonesia aktif) -->
+              <span class="lang-id-text">ID</span>
+              <!-- Teks EN (Tampil saat Bahasa Inggris aktif) -->
+              <span class="lang-en-text" style="display: none;">EN</span>
+            </button>
 
             <!-- Tombol Pengalih Tema (Ikon tunggal Matahari/Bulan) di ujung kanan -->
             <button
@@ -282,18 +308,24 @@
       <div
         class="mx-auto px-5 pt-20 pb-5 sm:w-11/12 md:w-9/12 lg:w-6/12 text-center container"
       >
-        <h2 class="text-rafcolor judul-utama">Who I am ?</h2>
-        <p class="my-3 text-slate-700">
+        <h2 class="text-rafcolor judul-utama" data-lang-id="Siapa saya ?" data-lang-en="Who I am ?">Who I am ?</h2>
+        <p class="my-3 text-slate-700" 
+           data-lang-id="Saya adalah seorang freelancer multidisiplin dengan pengalaman praktis dalam desain visual, UI/UX, dan pengembangan web front-end. Latar belakang saya juga mencakup penulisan dan fotografi, yang meningkatkan kemampuan saya untuk membuat konten digital yang menarik dan fungsional." 
+           data-lang-en="I am a multidisciplinary freelancer with hands-on experience in visual design, UI/UX, and front-end web development. My background also includes writing and photography, which enhance my ability to create engaging and functional digital content.">
           I am a multidisciplinary freelancer with hands-on experience in visual
           design, UI/UX, and front-end web development. My background also
           includes writing and photography, which enhance my ability to create
           engaging and functional digital content.
         </p>
-        <p class="my-3 text-slate-700">
+        <p class="my-3 text-slate-700" 
+           data-lang-id="Saat ini, saya sedang memperdalam pengetahuan saya dalam kecerdasan buatan, agar tetap mengikuti tren dan inovasi terbaru dalam teknologi." 
+           data-lang-en="Currently, I am deepening my knowledge in artificial intelligence, staying updated with the latest trends and innovations in technology.">
           Currently, I am deepening my knowledge in artificial intelligence,
           staying updated with the latest trends and innovations in technology.
         </p>
-        <p class="my-3 text-slate-700">
+        <p class="my-3 text-slate-700" 
+           data-lang-id="Dengan menggabungkan keahlian teknis dengan pemikiran kreatif, saya bertujuan untuk memberikan solusi yang efisien, estetis, dan berpusat pada pengguna. Saya bersemangat untuk terus belajar, beradaptasi, dan memberikan kontribusi yang berarti bagi tim yang dinamis dan proyek-proyek yang berwawasan ke depan." 
+           data-lang-en="By combining technical expertise with creative thinking, I aim to deliver efficient, aesthetic, and user-centered solutions. I am eager to keep learning, adapting, and contributing meaningfully to dynamic teams and forward-thinking projects.">
           By combining technical expertise with creative thinking, I aim to
           deliver efficient, aesthetic, and user-centered solutions. I am eager
           to keep learning, adapting, and contributing meaningfully to dynamic
@@ -305,7 +337,7 @@
     <!-- SKILL -->
     <section id="skill" class="bg-rafcolor pt-14 pb-1 w-full">
       <div class="mx-auto pt-10 w-3/4">
-        <h2 class="text-white judul-utama">Skills</h2>
+        <h2 class="text-white judul-utama" data-lang-id="Keahlian" data-lang-en="Skills">Skills</h2>
       </div>
       <div
         class="flex flex-wrap justify-evenly gap-1 mx-auto mb-10 rounded-md w-3/4"
@@ -318,7 +350,7 @@
             class="mx-auto py-3 border-slate-200 border-b-2 border-solid text-rafcolor"
           >
             <i class="p-5 text-6xl fas fa-pencil-ruler"></i>
-            <h2 class="text-2xl">Visual Design</h2>
+            <h2 class="text-2xl" data-lang-id="Desain Visual" data-lang-en="Visual Design">Visual Design</h2>
           </div>
 
           <!-- Details Skills Tag Visual Design-->
@@ -427,7 +459,7 @@
             class="mx-auto py-3 border-slate-200 border-b-2 border-solid text-rafcolor"
           >
             <i class="p-5 text-6xl fas fa-microchip"></i>
-            <h2 class="text-2xl">Artificial Intelligence</h2>
+            <h2 class="text-2xl" data-lang-id="Kecerdasan Buatan" data-lang-en="Artificial Intelligence">Artificial Intelligence</h2>
           </div>
 
           <!-- Details Skills Tag Visual Design-->
@@ -517,7 +549,7 @@
             class="mx-auto py-3 border-slate-200 border-b-2 border-solid text-rafcolor"
           >
             <i class="p-5 text-6xl fa fa-file-code"></i>
-            <h2 class="text-2xl">FrontEnd Dev</h2>
+            <h2 class="text-2xl" data-lang-id="Pengembangan Front-End" data-lang-en="FrontEnd Dev">FrontEnd Dev</h2>
           </div>
 
           <!-- Details Skills Tag FrontEnd-->
@@ -645,7 +677,7 @@
             class="mx-auto py-3 border-slate-200 border-b-2 border-solid text-rafcolor"
           >
             <i class="p-5 text-6xl fa fa-camera"></i>
-            <h2 class="text-2xl">Photography</h2>
+            <h2 class="text-2xl" data-lang-id="Fotografi" data-lang-en="Photography">Photography</h2>
           </div>
 
           <!-- Details Skills Tag -->
@@ -729,7 +761,7 @@
             class="mx-auto py-3 border-slate-200 border-b-2 border-solid text-rafcolor"
           >
             <i class="p-5 text-6xl fa fa-keyboard"></i>
-            <h2 class="text-2xl">Creative Writing</h2>
+            <h2 class="text-2xl" data-lang-id="Penulisan Kreatif" data-lang-en="Creative Writing">Creative Writing</h2>
           </div>
 
           <!-- Details Skills Tag -->
@@ -801,7 +833,7 @@
     <!-- PROJECT -->
     <section id="project">
       <div class="bg-blue-50 mx-auto py-20">
-        <h1 class="text-rafcolor judul-utama">Project</h1>
+        <h1 class="text-rafcolor judul-utama" data-lang-id="Proyek" data-lang-en="Project">Project</h1>
 
         <div class="mx-auto w-3/4">
           <div id="project-card" class="flex flex-wrap justify-evenly">
@@ -818,7 +850,7 @@
     <!-- FIND ME -->
     <section id="find-me">
       <div class="bg-blue-50 mx-auto py-20">
-        <h2 class="text-rafcolor judul-utama">Find me on other platforms</h2>
+        <h2 class="text-rafcolor judul-utama" data-lang-id="Temukan saya di platform lain" data-lang-en="Find me on other platforms">Find me on other platforms</h2>
 
         <div class="content-center mx-auto w-10/12 text-rafcolor">
           <div class="flex flex-wrap justify-center mx-auto py-5">
@@ -944,7 +976,7 @@
     <section id="contact">
       <div class="bg-rafcolor mx-auto pb-10 text-center">
         <div class="mx-auto pt-20 w-1/2">
-          <h2 class="text-white judul-utama">Contact</h2>
+          <h2 class="text-white judul-utama" data-lang-id="Kontak" data-lang-en="Contact">Contact</h2>
         </div>
 
         <div class="content-center mx-auto w-1/2 text-white">
@@ -1065,7 +1097,7 @@
     <!-- RESUME -->
     <section id="resume">
       <div class="bg-blue-50 mx-auto py-20">
-        <h1 class="text-rafcolor judul-utama">Resume</h1>
+        <h1 class="text-rafcolor judul-utama" data-lang-id="Resume" data-lang-en="Resume">Resume</h1>
 
         <div
           class="group bg-rafcolor shadow-lg mx-auto p-5 rounded-lg w-4/5 md:w-2/5 text-center"
@@ -1081,6 +1113,8 @@
             >
               <h2
                 class="bg-white group-hover:bg-orange-400 shadow-inner mx-auto mt-5 py-2 rounded-full font-medium text-rafcolor group-hover:text-white text-xl"
+                data-lang-id='<i class="text-rafcolor group-hover:text-white fa fa-download"></i> Unduh Resume'
+                data-lang-en='<i class="text-rafcolor group-hover:text-white fa fa-download"></i> Download Resume'
               >
                 <i
                   class="text-rafcolor group-hover:text-white fa fa-download"
@@ -1110,17 +1144,45 @@
     <!-- script -->
     <script src="public/js/app.js"></script>
 
-    <!-- Script untuk pengalih tema gelap/terang (Dark Mode) -->
+    <!-- Script untuk pengalih tema gelap/terang (Dark Mode) & Bahasa (ID/EN) -->
     <script>
+      // Mengatur fungsionalitas pergantian tema gelap dan terang pada dokumen
       const btnThemeToggle = document.getElementById('btn-theme-toggle');
-      btnThemeToggle.addEventListener('click', function() {
-        if (document.documentElement.classList.contains('dark')) {
-          document.documentElement.classList.remove('dark');
-          localStorage.setItem('theme', 'light');
-        } else {
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('theme', 'dark');
-        }
+      btnThemeToggle.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.contains('dark');
+        document.documentElement.classList.toggle('dark', !isDark);
+        localStorage.setItem('theme', isDark ? 'light' : 'dark');
+      });
+
+      // Mengatur fungsionalitas pelokalan bahasa (Indonesia/Inggris) pada dokumen
+      const btnLangToggle = document.getElementById('btn-lang-toggle');
+      const langIdText = btnLangToggle.querySelector('.lang-id-text');
+      const langEnText = btnLangToggle.querySelector('.lang-en-text');
+      
+      // Menentukan bahasa default utama sistem tanpa persistensi penyimpanan
+      window.currentLang = 'en';
+      
+      // Menerapkan konten teks terjemahan pada elemen dokumen berdasarkan bahasa terpilih
+      const applyLanguage = (lang) => {
+        const isId = lang === 'id';
+        langIdText.style.display = isId ? 'none' : 'inline-block';
+        langEnText.style.display = isId ? 'inline-block' : 'none';
+        
+        document.querySelectorAll('[data-lang-id]').forEach(el => {
+          if (!el.hasAttribute('data-original-html')) {
+            el.setAttribute('data-original-html', el.innerHTML);
+          }
+          el.innerHTML = isId ? el.getAttribute('data-lang-id') : (el.getAttribute('data-original-html') || el.getAttribute('data-lang-en'));
+        });
+      };
+      
+      // Menginisialisasi bahasa dokumen saat pertama kali dimuat
+      applyLanguage(window.currentLang);
+      
+      // Menangani event klik untuk mengubah status bahasa aktif secara bergantian
+      btnLangToggle.addEventListener('click', () => {
+        window.currentLang = window.currentLang === 'en' ? 'id' : 'en';
+        applyLanguage(window.currentLang);
       });
     </script>
 
