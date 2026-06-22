@@ -1,0 +1,23 @@
+# =========================================================================
+# File Pengabaian Git (Git Ignore) - rafiadadisini.github.io
+# Komentar penjelasan singkat dalam Bahasa Indonesia
+# =========================================================================
+
+# Mengabaikan folder pustaka dependensi lokal NPM (sangat besar & bisa diunduh ulang)
+node_modules/
+
+# Mengabaikan berkas sampah metadata tampilan folder bawaan sistem operasi macOS & Windows
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# Mengabaikan berkas pencatatan log/kesalahan dari package manager
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Mengabaikan folder preferensi editor lokal VS Code agar tidak menimpa setelan developer lain
+.vscode/
