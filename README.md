@@ -1,6 +1,6 @@
 # rafiadadisini.github.io
 
-An interactive, responsive, and dynamic personal portfolio website showcasing the profile, skills, projects, and contact information of **Rafii Hidayatullah Nazari**.
+A personal portfolio website showcasing the profile information of **@rafiadadisini**.
 
 ---
 
