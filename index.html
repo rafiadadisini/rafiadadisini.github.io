@@ -87,6 +87,19 @@
         display: inline-block; /* Tampilkan bulan pada mode gelap */
         color: #e2e8f0 !important; /* Warna abu-abu terang untuk bulan */
       }
+      
+      /* Gaya ikon skill pada mode gelap agar terlihat kontras di atas background gelap */
+      html.dark .icon-skill {
+        color: #cbd5e1; /* Mengubah warna ikon menjadi abu-abu terang */
+      }
+      /* Hover agar ikon berubah menjadi biru langit khas rafi-color di mode gelap */
+      html.dark .group:hover .icon-skill {
+        color: #38bdf8;
+      }
+      /* Membalikkan warna gambar ikon (seperti CorelDraw) agar menjadi putih di mode gelap */
+      html.dark img.icon-skill {
+        filter: invert(1);
+      }
     </style>
     <!--  -->
 
